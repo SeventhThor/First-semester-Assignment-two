@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellness</title>
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="left-section">
+        <picture>
+          <source media="(min-width: 768px)" srcset="logo.jpeg" />
+          <img src="logo.jpg"/>
+        </picture>
+        <h1 role="heading">For Individuals</h1>
+        <p class="desktop_text">
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+        <p class="mobile_text">
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
+        </p>
+      </section>
+
+      <section class="right-section">
+        <form action="/" class="form">
+          <div class="columns_2">
+            <div>
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" />
+            </div>
+
+            <div>
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" />
+            </div>
+
+            <div>
+              <label for="gender">Gender</label>
+              <div class="select">
+                <select name="gender" id="gender" required>
+                  Gender
+                  <option value="" disabled selected hidden>Select here</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="dob">Date of Birth</label>
+              <div class="date_input_cont">
+                <input
+                  class="date_input"
+                  type="text"
+                  name="dob"
+                  id="dob"
+                  placeholder="Select here"
+                  onfocus="{this.type='date'}" />
+              </div>
+            </div>
+
+            <div>
+              <label for="weight">Weight (KG)</label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Enter Weight" />
+            </div>
+
+            <div>
+              <label for="height">Height (CM)</label>
+              <input
+                type="text"
+                name="height"
+                id="height"
+                placeholder="Enter height here..." />
+            </div>
+          </div>
+
+          <div class="column_1">
+            <div class="column_1_div">
+              <label for="activityLevel">Activity Level</label>
+              <div class="select">
+                <select name="activityLevel" id="activityLevel" required>
+                  <option value="" disabled selected hidden>Select here</option>
+                  <option value="level_1">Level 1</option>
+                  <option value="level_2">Level 2</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="column_1_div">
+              <label for="password">Password</label>
+              <div class="password_input_cont">
+                <input type="text" name="password" id="password" />
+  
+              </div>
+            </div>
+          </div>
+
+          <button>Register</button>
+          <p class="terms">
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
